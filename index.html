@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app" aria-labelledby="title">
+    <section class="hero" aria-label="Current time">
+      <p class="eyebrow">Local time</p>
+      <h1 id="title">Clock Room</h1>
+
+      <div class="clock-shell">
+        <div class="analog" aria-hidden="true">
+          <div class="face">
+            <span class="mark mark-12"></span>
+            <span class="mark mark-3"></span>
+            <span class="mark mark-6"></span>
+            <span class="mark mark-9"></span>
+            <span class="hand hand-hour" id="hour-hand"></span>
+            <span class="hand hand-minute" id="minute-hand"></span>
+            <span class="hand hand-second" id="second-hand"></span>
+            <span class="center-dot"></span>
+          </div>
+        </div>
+
+        <div class="digital">
+          <div id="time" class="time" aria-live="polite">--:--:--</div>
+          <div id="date" class="date">----</div>
+        </div>
+      </div>
+
+      <div class="meta">
+        <p id="timezone" class="timezone">Time zone: --</p>
+        <p id="status" class="status">Running live.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
